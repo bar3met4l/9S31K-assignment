@@ -1,14 +1,23 @@
-import NavBar from '../components/shared/navbar';
-import styles from './app.module.scss';
 import React from 'react';
 
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+
+import Home from '../pages/home';
+import Main from '../layouts/Main';
+import Video from '../pages/video';
 
 
 function App() {
   return (
-    <main className={styles.main}>
-        <NavBar/>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Main />}>
+          <Route path='/' element={<Home />}/>
+          <Route path='/video' element={<Video />}/>
+        </Route>
+        
+      </Routes>
+    </BrowserRouter>
   );
 }
 

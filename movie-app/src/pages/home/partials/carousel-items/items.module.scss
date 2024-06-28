@@ -1,19 +1,7 @@
-.container{
+.carousel-item{
     display: flex;
-    width: 100vw;
-    
-    .carousel{
-
-        display: flex;
-        width: 100%;
-
-        .carousel-item{
-            display: flex;
-            width: 100%;
-            height: calc(100vh - 65px);
-        }
-    }
-
+    width: 100%;
+    height: calc(100vh - 65px);
     img{
         display: flex;
         width: 100%;

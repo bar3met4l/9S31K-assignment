@@ -5,11 +5,7 @@
     img{
         display: flex;
         width: 100%;
-        overflow: hidden;
-
-        
-
-        
+        overflow: hidden;       
     }
     .content{
         display: flex;
@@ -17,6 +13,7 @@
         height: 100%;
         position: absolute;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
 
         .btns{
@@ -40,7 +37,7 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                border: 2px solid gray;
+                border: 2px solid #ff0000;
                 background-color: transparent;
 
                 svg{
@@ -52,6 +49,63 @@
 
         }
 
+        .footer{
+            display: flex;
+            bottom: 20px;
+            left: 20px;
+            gap:10px; 
+            width: 50%;
+            position: absolute;
+            align-items: start;
+            flex-direction: column;
+            justify-content: flex-start;
+        
+            h2{
+                font-family: var(--ff-primary);
+                font-size: var(--fs-extra-l);
+                color: var(--white);
+            }
+
+            .genre{
+            display: flex;
+
+            ul{
+                display: flex;
+                width: 100%;
+                gap: 10px;
+                justify-content: flex-start;
+                font-family: var(--ff-primary);
+
+                li{
+                    
+                    display: flex;
+                    padding: 10px 15px;
+                    border-radius: 100px;
+                    align-items: center;
+                    background-color: white;
+                    
+                }
+            }
+
+            .meta{
+                display: flex;
+                padding: 10px;
+                gap: 5px;
+                color: var(--white);
+                align-items: center;
+
+                span{
+                    font-weight: 550;;
+                }
+            }
+        }
+
+        p{
+            text-align: justify;
+            color: var(--white);
+            font-size: var(--fs-medium);
+        }
+        }
         
         
     }

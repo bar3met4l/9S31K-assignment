@@ -4,8 +4,8 @@ import styles from './recents.module.scss';
 
 function Recents() {
   return (
-    <section>
-        <h1>Recents section</h1>
+    <section className={styles.container}>
+        <p>Recently Updated</p>
     </section>
   )
 }

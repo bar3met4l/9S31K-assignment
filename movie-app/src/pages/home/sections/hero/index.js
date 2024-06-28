@@ -29,7 +29,10 @@ function Hero() {
         </div>
         </article> */}
         {CarouselData.map((item, index) => (
-            <CarouselItem key={index} item={item} />
+            <CarouselItem key={index} item={item}
+             watchNowHandler={()=> console.log("watch now clicked")}
+              watchLaterHandler={()=> console.log("watch later clicked")}
+              />
         ))}
         
         
